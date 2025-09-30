@@ -1,12 +1,10 @@
-/* Font dan Warna Dasar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #F4F6F9; /* Latar belakang putih gading */
 }
 
-/* Header */
 header {
     background-color: #fff;
     padding: 20px 0;
@@ -27,7 +25,7 @@ header {
 
 .logo h1 {
     font-size: 1.5em;
-    color: #0000ff; /* Warna biru */
+    color: #1D2D50; /* Warna navy */
     margin: 0;
 }
 
@@ -40,11 +38,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #0000ff;
+    color: #1D2D50; /* Warna navy saat hover */
 }
 
 .branding img {
-    height: 40px; /* Ukuran logo Ryy Design */
+    height: 40px;
 }
 
 /* Bagian Hero */
@@ -63,13 +61,15 @@ nav a:hover {
 
 .hero-content h1 {
     font-size: 2.5em;
-    color: #0000ff;
+    color: #1D2D50; /* Warna navy */
     margin-bottom: 10px;
 }
 
-.hero-content p {
+/* Style untuk font italic */
+.aesthetic-text {
     font-size: 1.1em;
     line-height: 1.8;
+    font-style: italic; /* Style italic di sini */
 }
 
 .hero-image img {
@@ -82,7 +82,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #0000ff;
+    background-color: #1D2D50; /* Warna navy */
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: #0000cc;
+    background-color: #2F4060; /* Warna navy lebih gelap saat hover */
 }
 
 /* Bagian About & Skill */
@@ -102,12 +102,12 @@ nav a:hover {
 }
 
 .about-section {
-    background-color: #f0f0f0;
+    background-color: #F4F6F9;
 }
 
 .about-section h2 {
     font-size: 2em;
-    color: #0000ff;
+    color: #1D2D50; /* Warna navy */
     text-transform: uppercase;
 }
 
@@ -134,7 +134,7 @@ nav a:hover {
 
 /* Bagian Portofolio */
 .portfolio-section {
-    background-color: #f0f0f0;
+    background-color: #F4F6F9;
 }
 
 .portfolio-grid {
@@ -159,7 +159,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #0000ff;
+    background-color: #1D2D50; /* Warna navy */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -173,7 +173,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #e0e0e0;
+    color: #ccc; /* Warna putih keabuan saat hover */
 }
 
 /* Responsif */
