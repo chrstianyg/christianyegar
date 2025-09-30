@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, #1D2D50, #6A26A8);
+    background: linear-gradient(135deg, #1D2D50, #26428B);
     padding: 100px 0;
     color: #F0CB16;
 }
@@ -260,4 +260,5 @@ footer {
         font-size: 2.5em;
     }
 }
+
 
