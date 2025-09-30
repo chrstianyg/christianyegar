@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF;
+    background-color: #fff;
     color: #333;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* Header & Navigasi */
 header {
-    background-color: #FFF7E3;
+    background-color: #fff;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -51,10 +51,11 @@ nav a:hover {
     color: #1D2D50;
 }
 
+/* Bagian Hero */
 .hero-section {
-    background: linear-gradient(160deg, #1D2D50, #26428B, #FFF7E3);
+    background: linear-gradient(135deg, #A855F7, #6A26A8);
     padding: 100px 0;
-    color: #FFF7E3;
+    color: #fff;
 }
 
 .hero-content {
@@ -90,7 +91,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #FFF7E3;
+    background-color: #1D2D50;
     color: #fff;
     padding: 15px 40px;
     text-decoration: none;
@@ -104,54 +105,80 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* Bagian Tentang Saya & Keahlian */
+/* Bagian Tentang Saya */
 .about-section {
-    background-color: #FFF7E3;
+    background-color: #F8F9FA;
+}
+
+.about-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text-content {
+    flex: 1;
+}
+
+.about-text-content h2 {
+    font-size: 2.5em; /* Ukuran yang sama dengan section-title */
+    color: #1D2D50;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Bagian Keahlian & Portofolio */
+.skill-section {
+    background-color: #fff;
     padding: 80px 0;
+    text-align: center;
 }
 
 .section-title {
     font-size: 2.5em;
     color: #1D2D50;
     text-align: center;
-    margin-bottom: 0px;
-}
-
-.about-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.about-text {
-    flex: 2;
-    line-height: 1.8;
-}
-
-.about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .skills-grid {
-    flex: 1;
-    display: grid;
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .skill-item {
-    background-color: #fff;
-    padding: 20px;
+    background: #F8F9FA;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    text-align: center;
+    transition: transform 0.3s;
+    max-width: 250px;
 }
 
-.icon-box {
-    width: 50px;
-    height: 50px;
-    background-color: #1D2D50;
-    border-radius: 50%;
-    margin: 0 auto 10px;
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-item h3 {
+    color: #1D2D50;
+    margin-top: 0;
 }
 
 /* Bagian Portofolio */
@@ -163,6 +190,8 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -171,6 +200,7 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s;
+    text-align: left;
 }
 
 .project-card:hover {
@@ -248,19 +278,18 @@ footer {
         margin-left: 0;
         margin-right: 20px;
     }
-    .hero-content, .about-content {
+    .hero-content, .about-flex-container {
         flex-direction: column-reverse;
-    }
-    .hero-image {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 30px;
     }
     .hero-text h1 {
         font-size: 2.5em;
     }
+    .about-text-content h2 {
+        font-size: 2em;
+    }
+    .hero-image, .about-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
 }
-
-
-
-
