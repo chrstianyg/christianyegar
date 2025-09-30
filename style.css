@@ -53,7 +53,7 @@ nav a:hover {
 
 /* Bagian Hero */
 .hero-section {
-    background: linear-gradient(135deg, #A855F7, #6A26A8);
+    background: linear-gradient(135deg, #000814, #001D3D, #003566);
     padding: 100px 0;
     color: #fff;
 }
@@ -293,4 +293,5 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
