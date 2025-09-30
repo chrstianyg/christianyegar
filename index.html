@@ -13,69 +13,100 @@
 </head>
 <body>
 
-    <section id="hero" class="section">
-        <div class="content-box">
-            <img src="images/profile.jpg" alt="Christian Yegar" class="hero-image">
-            <h1 class="hero-title">Christian Yegar Sahaduta Benharto</h1>
-            <p class="hero-subtitle">Mahasiswa Sistem Informasi dan Graphic Designer</p>
-            <p class="hero-description">Saya berfokus pada pengimplementasian visual yang mampu berkomunikasi kepada khalayak.</p>
-            <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>Christian Yegar</h1>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="skills" class="section skill-section">
-        <h2 class="section-title">Keahlian Saya</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <h3>Graphic Design</h3>
-                <p>Membuat visual yang menarik dan komunikatif.</p>
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Develop your skills in a new and unique way</h1>
+                <p>Saya seorang Graphic Designer dan Mahasiswa Sistem Informasi yang berfokus pada pengimplementasian visual yang mampu berkomunikasi kepada khalayak.</p>
+                <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
             </div>
-            <div class="skill-item">
-                <h3>UI/UX Design</h3>
-                <p>Merancang antarmuka pengguna yang intuitif.</p>
-            </div>
-            <div class="skill-item">
-                <h3>Photography</h3>
-                <p>Mengambil gambar profesional untuk berbagai keperluan.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="section portfolio-section">
-        <h2 class="section-title">Proyek Pilihan</h2>
-        <div class="portfolio-grid">
-            <div class="project-card">
-                <img src="images/project1.jpg" alt="Proyek Usada Yeh">
-                <h3>Web Pengobatan Tradisional</h3>
-                <p>Penggunaan usada yeh.</p>
-                <a href="https://github.com/Sudo-Kusanagi/usada_yeh" target="_blank">Lihat Proyek</a>
-            </div>
-            <div class="project-card">
-                <img src="images/project2.jpg" alt="Proyek Desain Logo">
-                <h3>Logo Merek</h3>
-                <p>Desain logo untuk sebuah merek fashion.</p>
-                <a href="https://behance.net/your-link" target="_blank">Lihat Proyek</a>
-            </div>
-            <div class="project-card">
-                <img src="images/project3.jpg" alt="Proyek Poster">
-                <h3>Poster Kampanye Sosial</h3>
-                <p>Poster visual untuk kampanye edukasi.</p>
-                <a href="https://dribbble.com/your-link" target="_blank">Lihat Proyek</a>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Christian Yegar">
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-        <h2 class="section-title">Hubungi Saya</h2>
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/chrstianyg" target="_blank">GitHub</a>
-            <a href="mailto:christianbenharto@gmail.com">Email</a>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Saya seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha (Undiksha), saat ini duduk di semester 3. Saya memiliki minat yang kuat dalam bidang desain grafis dan teknologi informasi. Dalam desain grafis, saya tertarik untuk mengembangkan kreativitas melalui pembuatan visual yang komunikatif dan menarik.</p>
+                    <p>Sementara itu, di bidang IT, saya sedang mempelajari UI/UX Design karena saya sangat suka terjun ke dunia visual di dalam sebuah web.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="icon-box"></div>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="icon-box"></div>
+                        <h3>Photography</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="icon-box"></div>
+                        <h3>Graphic Design</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Proyek Pilihan</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Proyek Pengobatan Usada Yeh">
+                    <div class="project-info">
+                        <h3>Web Pengobatan Tradisional</h3>
+                        <p>Penggunaan usada yeh.</p>
+                        <a href="https://github.com/Sudo-Kusanagi/usada_yeh" target="_blank">Lihat Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Proyek Desain Logo">
+                    <div class="project-info">
+                        <h3>Desain Logo</h3>
+                        <p>Desain logo untuk sebuah merek fashion.</p>
+                        <a href="#" target="_blank">Lihat Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Proyek Poster">
+                    <div class="project-info">
+                        <h3>Poster Kampanye Sosial</h3>
+                        <p>Poster visual untuk kampanye edukasi.</p>
+                        <a href="#" target="_blank">Lihat Proyek</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Christian Yegar. Semua Hak Cipta Dilindungi.</p>
+        <div class="container">
+            <p>&copy; 2025 Christian Yegar. Semua Hak Cipta Dilindungi.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/chrstianyg" target="_blank">GitHub</a>
+                <a href="mailto:christianbenharto@gmail.com">Email</a>
+            </div>
+        </div>
     </footer>
 
 </body>
