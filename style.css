@@ -1,10 +1,12 @@
+/* Font dan Warna Dasar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F6F9; /* Latar belakang putih gading */
+    background-color: #F4F6F9;
 }
 
+/* Header */
 header {
     background-color: #fff;
     padding: 20px 0;
@@ -25,7 +27,7 @@ header {
 
 .logo h1 {
     font-size: 1.5em;
-    color: #1D2D50; /* Warna navy */
+    color: #1D2D50;
     margin: 0;
 }
 
@@ -38,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1D2D50; /* Warna navy saat hover */
+    color: #1D2D50;
 }
 
 .branding img {
@@ -48,41 +50,39 @@ nav a:hover {
 /* Bagian Hero */
 .hero-section {
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 20px;
-    gap: 40px;
+    text-align: center; /* Konten di tengah */
 }
 
 .hero-content {
     max-width: 600px;
+    margin: 0 auto; /* Kontainer di tengah */
 }
 
-.hero-content h1 {
-    font-size: 2.5em;
-    color: #1D2D50; /* Warna navy */
-    margin-bottom: 10px;
-}
-
-/* Style untuk font italic */
-.aesthetic-text {
-    font-size: 1.1em;
-    line-height: 1.8;
-    font-style: italic; /* Style italic di sini */
-}
-
-.hero-image img {
+.profile-img-center {
     width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px; /* Jarak antara foto dan teks */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #1D2D50;
+    margin-bottom: 10px;
+}
+
+.aesthetic-text {
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-style: italic;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #1D2D50; /* Warna navy */
+    background-color: #1D2D50;
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -92,13 +92,13 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: #2F4060; /* Warna navy lebih gelap saat hover */
+    background-color: #2F4060;
 }
 
 /* Bagian About & Skill */
 .about-section, .skill-section, .portfolio-section {
     padding: 80px 20px;
-    text-align: center;
+    text-align: center; /* Pastikan semua konten di tengah */
 }
 
 .about-section {
@@ -107,7 +107,7 @@ nav a:hover {
 
 .about-section h2 {
     font-size: 2em;
-    color: #1D2D50; /* Warna navy */
+    color: #1D2D50;
     text-transform: uppercase;
 }
 
@@ -159,7 +159,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #1D2D50; /* Warna navy */
+    background-color: #1D2D50;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -173,20 +173,20 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ccc; /* Warna putih keabuan saat hover */
+    color: #ccc;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
     .hero-section {
-        flex-direction: column;
-        text-align: center;
+        padding: 30px 20px;
     }
-    .hero-content {
-        order: 2;
+    .profile-img-center {
+        width: 250px;
+        height: auto;
     }
-    .hero-image {
-        order: 1;
+    .hero-content h1 {
+        font-size: 2em;
     }
     .skill-section {
         flex-direction: column;
