@@ -1,263 +1,195 @@
-/* Styling Dasar */
+/* Font dan Warna Dasar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-    scroll-behavior: smooth;
+    background-color: #f0f0f0;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header & Navigasi */
+/* Header */
 header {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-nav {
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: #0000ff; /* Warna biru */
+    margin: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #555;
-    font-weight: 600;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #007bff;
+    color: #0000ff;
 }
 
-/* Hero Section */
-#home {
-    text-align: center;
-    padding: 80px 0;
-    background: #fff;
+.branding img {
+    height: 40px; /* Ukuran logo Ryy Design */
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+/* Bagian Hero */
+.hero-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #0000ff;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 400px;
     object-fit: cover;
-    border: 4px solid #007bff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 5px;
-    color: #2c3e50;
-}
-
-h2 {
-    font-size: 1.8em;
-    color: #7f8c8d;
-    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #0000ff;
     color: #fff;
-    padding: 12px 25px;
+    padding: 12px 30px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #0000cc;
 }
 
-/* Bagian Konten (Tentang, Portofolio, Kontak) */
-section {
-    padding: 80px 0;
+/* Bagian About & Skill */
+.about-section, .skill-section, .portfolio-section {
+    padding: 80px 20px;
     text-align: center;
 }
 
-h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    position: relative;
-    display: inline-block;
+.about-section {
+    background-color: #f0f0f0;
 }
 
-h2::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    background-color: #007bff;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+.about-section h2 {
+    font-size: 2em;
+    color: #0000ff;
+    text-transform: uppercase;
 }
 
-#about, #contact {
+.skill-section {
     background-color: #fff;
-}
-
-.skills-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 80px;
 }
 
 .skill-item {
-    background: #e9ecef;
-    color: #495057;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    font-weight: 500;
+    text-align: center;
 }
 
-.download-cv {
-    display: inline-block;
-    margin-top: 30px;
-    color: #007bff;
-    text-decoration: none;
-    border: 2px solid #007bff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    transition: all 0.3s ease;
+.skill-item img {
+    height: 80px;
+    margin-bottom: 10px;
 }
 
-.download-cv:hover {
-    background-color: #007bff;
-    color: #fff;
+.skill-item h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Bagian Portofolio */
+.portfolio-section {
+    background-color: #f0f0f0;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.project-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    overflow: hidden;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #007bff;
-}
-
-.project-card h3 {
-    padding: 15px 20px 0;
-    margin: 0;
-    color: #34495e;
-}
-
-.project-card p {
-    padding: 0 20px 15px;
-    color: #777;
-}
-
-.project-card a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 0 0 10px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-}
-
-.project-card a:hover {
-    background-color: #e0e0e0;
-}
-
-/* Formulir Kontak */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto 30px;
-}
-
-#contact input, #contact textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#contact button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #0056b3;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.contact-links a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background-color: #0000ff;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 1.5em; }
-    section { padding: 50px 0; }
-    nav a { padding: 10px 12px; }
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
 
+.footer-links a:hover {
+    color: #e0e0e0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        order: 2;
+    }
+    .hero-image {
+        order: 1;
+    }
+    .skill-section {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
