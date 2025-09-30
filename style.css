@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #FFF;
     color: #333;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* Header & Navigasi */
 header {
-    background-color: #001D3D;
+    background-color: #FFF7E3;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -260,5 +260,6 @@ footer {
         font-size: 2.5em;
     }
 }
+
 
 
