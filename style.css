@@ -107,7 +107,7 @@ nav a:hover {
 
 /* Bagian Tentang Saya */
 .about-section {
-    background: linear-gradient(135deg, #F8F9FA,#EEC643, #CCA000, #F0CB16);
+    background: linear-gradient(115deg, #BC403D, #241705);
 }
 
 .about-flex-container {
@@ -117,7 +117,7 @@ nav a:hover {
 }
 
 .about-text-content {
-    flex: 2; /* Diubah menjadi flex: 2 agar lebih lebar */
+    flex: 2;
 }
 
 .about-text-content h2 {
@@ -301,4 +301,5 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
