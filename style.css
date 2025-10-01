@@ -191,70 +191,70 @@ nav a:hover {
 
 /* Bagian Portofolio */
 .portfolio-section {
-    background: linear-gradient(135deg, #000814, #001D3D, #003566);
-    padding-bottom: 120px; /* Jarak bawah ditambah */
+    /* Bagian ini sudah benar, jadi tidak diubah */
+    background: linear-gradient(135deg, #000814, #001D3D, #003566);
+    padding-bottom: 120px; /* Jarak bawah ditambah */
 }
 
-/* Menambahkan style khusus untuk judul di bagian Portofolio */
-.portfolio-section .section-title {
-    color: #FFF; /* Mengubah warna teks judul menjadi putih */
-}
-
+/* Mengatur tata letak dan style kotak proyek */
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .project-card {
-    background-color: #000814;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.4s;
-    text-align: center;
+    /* Mengubah latar belakang menjadi putih */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.4s;
+    text-align: center;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .project-info {
-    padding: 20px;
-    text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .project-info h3 {
-    color: #FFF; /* Mengubah warna judul proyek menjadi putih */
-    margin-top: 20px;
-    text-align: center;
+    /* Mengubah warna judul agar terlihat di latar belakang putih */
+    color: #000; 
+    margin-top: 20px;
+    text-align: center;
 }
 
 .project-info p {
-    font-size: 0.9em;
+    font-size: 0.9em;
+    color: #555; /* Tambahan agar deskripsi terlihat jelas */
 }
 
 .project-info a {
-    display: inline-block;
-    background-color: #000;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
 .project-info a:hover {
-    background-color: #F09410;
+    background-color: #F09410;
 }
 
 /* Footer & Social Links */
@@ -308,3 +308,4 @@ footer {
         margin-bottom: 30px;
     }
 }
+
