@@ -257,6 +257,10 @@ nav a:hover {
     padding-bottom: 120px;
 }
 
+.portfolio-section .section-title {
+    color: #fff;
+    text-align: center;
+}
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -496,4 +500,5 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
