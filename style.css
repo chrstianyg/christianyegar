@@ -206,12 +206,10 @@ nav a:hover {
 
 /* Bagian Portofolio */
 .portfolio-section {
-    /* Bagian ini sudah benar, jadi tidak diubah */
     background: linear-gradient(135deg, #000814, #001D3D, #003566);
-    padding-bottom: 120px; /* Jarak bawah ditambah */
+    padding-bottom: 120px;
 }
 
-/* Mengatur tata letak dan style kotak proyek */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -221,7 +219,6 @@ nav a:hover {
 }
 
 .project-card {
-    /* Mengubah latar belakang menjadi putih */
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -246,15 +243,15 @@ nav a:hover {
 }
 
 .project-info h3 {
-    /* Mengubah warna judul agar terlihat di latar belakang putih */
-    color: #000; 
+
+    color: #FFF; 
     margin-top: 20px;
     text-align: center;
 }
 
 .project-info p {
     font-size: 0.9em;
-    color: #555; /* Tambahan agar deskripsi terlihat jelas */
+    color: #555; /
 }
 
 .project-info a {
@@ -428,4 +425,5 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
