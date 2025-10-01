@@ -227,8 +227,8 @@ nav a:hover {
 }
 
 .project-info h3 {
-    color: #1D2D50;
-    margin-top: 0;
+    color: #FFF;
+    margin-top: 20px;
 }
 
 .project-info p {
@@ -252,7 +252,7 @@ nav a:hover {
 
 /* Footer & Social Links */
 footer {
-    background: #F09410;
+    background: #000;
     color: #FFF;
     text-align: center;
     padding: 20px 0;
@@ -301,6 +301,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
