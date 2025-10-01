@@ -321,7 +321,7 @@ nav a:hover {
 
 /* Bagian Komentar */
 .comments-section {
-    background-color: #2D3E50;
+    background-color: #1D2D50;
     color: #fff;
 }
 
@@ -335,7 +335,7 @@ nav a:hover {
 .comment-form-container {
     max-width: 600px;
     margin: 0 auto 40px;
-    background-color: #1D2D50;
+    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -349,7 +349,7 @@ nav a:hover {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #3d516e;
+    background-color: #1D2D50;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -361,7 +361,7 @@ nav a:hover {
 
 .comment-form-container button {
     width: 100%;
-    background-color: #F09410;
+    background-color: #1D2D50;
     color: #fff;
     border: none;
     padding: 15px;
@@ -372,7 +372,7 @@ nav a:hover {
 }
 
 .comment-form-container button:hover {
-    background-color: #d17500;
+    background-color: #1D2D50;
 }
 
 .comments-list {
@@ -428,3 +428,4 @@ footer {
         margin-bottom: 30px;
     }
 }
+
