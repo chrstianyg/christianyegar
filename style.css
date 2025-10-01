@@ -203,7 +203,7 @@ nav a:hover {
 }
 
 .project-card {
-    background-color: #F8F9FA;
+    background-color: #000814;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -238,8 +238,8 @@ nav a:hover {
 
 .project-info a {
     display: inline-block;
-    background-color: #FFF;
-    color: #1D2D50;
+    background-color: #000;
+    color: #FFF;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -302,6 +302,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
