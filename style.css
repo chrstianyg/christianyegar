@@ -207,8 +207,8 @@ nav a:hover {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-    text-align: left;
+    transition: transform 0.4s;
+    text-align: center;
 }
 
 .project-card:hover {
@@ -223,12 +223,13 @@ nav a:hover {
 
 .project-info {
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .project-info h3 {
-    color: #FFF;
+    color: #000;
     margin-top: 20px;
+    text-allign: center;
 }
 
 .project-info p {
@@ -301,6 +302,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
