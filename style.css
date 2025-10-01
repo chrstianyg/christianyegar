@@ -122,7 +122,7 @@ nav a:hover {
 
 .about-text-content h2 {
     font-size: 4.5em;
-    color: #FEEAF0;
+    color: #241705;
     margin-bottom: 20px;
 }
 
@@ -146,8 +146,8 @@ nav a:hover {
 .download-cv-btn {
     display: inline-block;
     margin-top: 20px;
-    background-color: #FEEAF0;
-    color: #241705;
+    background-color: #241705;
+    color: #FEEAF0;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -155,7 +155,7 @@ nav a:hover {
 }
 
 .download-cv-btn:hover {
-    background-color: #000;
+    background-color: #F09410;
 }
 
 /* Bagian Keahlian & Portofolio */
@@ -301,6 +301,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
