@@ -191,7 +191,7 @@ nav a:hover {
 
 /* Bagian Portofolio */
 .portfolio-section {
-    background-color: #fff;
+    background: linear-gradient(135deg, #000814, #001D3D, #003566);
 }
 
 .portfolio-grid {
@@ -237,8 +237,8 @@ nav a:hover {
 
 .project-info a {
     display: inline-block;
-    background-color: #000;
-    color: #fff;
+    background-color: #FFF;
+    color: #1D2D50;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -247,13 +247,13 @@ nav a:hover {
 }
 
 .project-info a:hover {
-    background-color: #1D2D50;
+    background-color: #F09410;
 }
 
 /* Footer & Social Links */
 footer {
-    background: #000;
-    color: #fff;
+    background: #F09410;
+    color: #FFF;
     text-align: center;
     padding: 20px 0;
 }
@@ -301,6 +301,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
