@@ -121,9 +121,9 @@ nav a:hover {
 }
 
 .about-text-content h2 {
-    font-size: 4.5em;
+    font-size: 3.5em;
     color: #241705;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .about-description {
@@ -301,6 +301,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
 
 
