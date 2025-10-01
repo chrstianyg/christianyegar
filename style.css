@@ -257,29 +257,58 @@ nav a:hover {
     background-color: #F09410;
 }
 
-/* Footer & Social Links */
-footer {
-    background: #000;
-    color: #FFF;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
+/* Bagian Connect With Me */
+.connect-section {
+    background: linear-gradient(135deg, #000814, #001D3D, #003566);
     color: #fff;
+    padding: 80px 0;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #2D3E50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-.social-links a:hover {
-    color: #eee;
+.social-card:hover {
+    transform: translateY(-5px);
+    background-color: #3D4E60;
 }
 
+.social-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+footer .social-links {
+    display: none;
+}
 /* Responsif */
 @media (max-width: 768px) {
     .nav-container {
@@ -308,4 +337,5 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 
