@@ -319,6 +319,80 @@ nav a:hover {
     color: #555;
 }
 
+/* Bagian Komentar */
+.comments-section {
+    background-color: #2D3E50;
+    color: #fff;
+}
+
+.comments-title {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comment-form-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background-color: #1D2D50;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.comment-form-container input,
+.comment-form-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d516e;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-form-container input::placeholder,
+.comment-form-container textarea::placeholder {
+    color: #bbb;
+}
+
+.comment-form-container button {
+    width: 100%;
+    background-color: #F09410;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form-container button:hover {
+    background-color: #d17500;
+}
+
+.comments-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comment-item {
+    background-color: #1D2D50;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 footer {
     background: #000;
     color: #fff;
@@ -354,7 +428,3 @@ footer {
         margin-bottom: 30px;
     }
 }
-
-
-
-
