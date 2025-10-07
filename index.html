@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Yegar - Portofolio</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,6 +22,8 @@
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#hobbies">Hobi</a>
+                <a href="#education">Pendidikan</a>
                 <a href="#portfolio">Portofolio</a>
                 <a href="#contact">Kontak</a>
             </nav>
@@ -37,123 +40,201 @@
         </div>
     </section>
     
-    <section id="about" class="section about-section">
-        <div class="container about-flex-container">
-            <div class="about-text-content">
-                <h2 class="about-title">Tentang Saya</h2>
-                <p class="about-description">Sebagai seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha, saya memiliki passion kuat untuk menjembatani dunia desain grafis dan teknologi. Saya berfokus pada penciptaan visual yang tidak hanya estetik, tetapi juga komunikatif.</p>
-                <p class="about-description">Selain itu, saya terus mendalami UI/UX Design untuk merancang pengalaman digital yang intuitif dan fungsional. Saya percaya, perpaduan antara seni dan logika adalah kunci untuk membangun solusi digital yang berkesan di era modern ini.</p>
-                <div class="button-group">
-                    <a href="images/Christian Yegar Sahaduta Benharto CV.pdf" class="download-cv-btn" download>CV</a>
-                    <a href="images/Portfoliobyjegarr.pdf" class="portfolio-btn" target="_blank">Portofolio Desain</a>
+    <section id="about" class="section about-section animate">
+        <div class="container">
+            
+            <h2 class="about-title">Tentang Saya</h2>
+
+            <!-- Bagian Teks dan Gambar (menggunakan about-flex-container) -->
+            <div class="about-flex-container">
+                <div class="about-text-content">
+                    <p class="about-description">Sebagai seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha, saya memiliki passion kuat untuk menjembatani dunia desain grafis dan teknologi. Saya berfokus pada penciptaan visual yang tidak hanya estetik, tetapi juga komunikatif.</p>
+                    <p class="about-description">Selain itu, saya terus mendalami UI/UX Design untuk merancang pengalaman digital yang intuitif dan fungsional. Saya percaya, perpaduan antara seni dan logika adalah kunci untuk membangun solusi digital yang berkesan di era modern ini.</p>
+                    <div class="button-group">
+                        <a href="images/Christian Yegar Sahaduta Benharto CV.pdf" class="download-cv-btn" download>Unduh CV Saya</a>
+                        <a href="[https://behance.net/yourusername](https://behance.net/yourusername)" class="portfolio-btn" target="_blank">Lihat Portofolio Desain</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Gunakan placeholder image jika file images/about-me.jpg tidak tersedia -->
+                    <img src="[https://placehold.co/400x400/0A192F/FFC000?text=Foto+Profil](https://placehold.co/400x400/0A192F/FFC000?text=Foto+Profil)" alt="Tentang Saya" onerror="this.onerror=null; this.src='[https://placehold.co/400x400/0A192F/FFC000?text=Foto+Profil](https://placehold.co/400x400/0A192F/FFC000?text=Foto+Profil)'">
                 </div>
             </div>
-            <div class="about-image">
-                <img src="images/Gemini_Generated_Image_utnk18utnk18utnk.png" alt="Tentang Saya">
+
+            <!-- Bagian Hobi & Pendidikan (menggunakan about-content-grid) -->
+            <div class="about-content-grid">
+                <div id="hobbies" class="hobby-list">
+                    <h2 class="section-title" style="margin-bottom: 20px;">Hobi</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-camera"></i> <div><h3>Fotografi & Videografi</h3><p>Mengabadikan momen dan bercerita melalui visual.</p></div></li>
+                        <li><i class="fa-solid fa-music"></i> <div><h3>Musik</h3><p>Menikmati dan mendalami berbagai genre musik.</p></div></li>
+                        <li><i class="fa-solid fa-paint-brush"></i> <div><h3>Desain Grafis</h3><p>Menciptakan visual yang estetik dan komunikatif.</p></div></li>
+                        <li><i class="fa-solid fa-gamepad"></i> <div><h3>Main Game</h3><p>Meningkatkan keterampilan berpikir strategis dan cepat.</p></div></li>
+                    </ul>
+                </div>
+                <div id="education" class="education-list">
+                    <h2 class="section-title" style="margin-bottom: 20px;">Pendidikan</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-graduation-cap"></i> <div><h3>Sistem Informasi, Undiksha</h3><p>Sedang menempuh pendidikan (2022 - Sekarang)</p></div></li>
+                        <li><i class="fa-solid fa-school"></i> <div><h3>SMKN 3 Singaraja</h3><p>Teknik Komputer dan Jaringan</p></div></li>
+                        <li><i class="fa-solid fa-school"></i> <div><h3>SMPN 1 Singaraja</h3><p>Lulusan tahun 2019</p></div></li>
+                        <li><i class="fa-solid fa-school"></i> <div><h3>SDN 1 Astina</h3><p>Lulusan tahun 2016</p></div></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="container skills-grid-container">
-            <h2 class="section-title">Keahlian</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="icon-box"></div>
-                    <h3>Front-End Develop</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="icon-box"></div>
-                    <h3>Photography & Videography</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="icon-box"></div>
-                    <h3>Graphic Design</h3>
+
+            <!-- Bagian KEAHLIAN BARU: Penguasaan Bahasa Pemrograman -->
+            <div class="skills-grid-container">
+                <h2 class="section-title">Penguasaan Bahasa Pemrograman</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Skill Item: Python -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title-group">
+                                <i class="fa-solid fa-file-code skill-icon" style="color: #306998;"></i> <!-- Menggunakan ikon umum dengan warna Python -->
+                                <h3>Python</h3>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item: CSS -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title-group">
+                                <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                                <h3>CSS</h3>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item: HTML -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title-group">
+                                <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                                <h3>HTML</h3>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="bar-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item: JavaScript -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title-group">
+                                <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                                <h3>JavaScript</h3>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Item: Java -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title-group">
+                                <i class="fa-brands fa-java skill-icon" style="color: #5382A1;"></i>
+                                <h3>Java</h3>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="bar-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <!-- AKHIR BAGIAN KEAHLIAN BARU -->
+
         </div>
     </section>
 
-    <section id="certificates" class="section certificates-section">
+    <section id="portfolio" class="portfolio-section animate">
         <div class="container">
-            <h2 class="section-title">Sertifikat</h2>
-            <div class="certificates-grid">
-                <div class="certificate-card">
-                    <img src="images/certificate1.pdf" alt="Sertifikat Pelatihan 1">
-                    <div class="certificate-info">
-                        <h3>Belajar Dasar Pemrograman JavaScript</h3>
-                        <p>Penerbit: Dicoding</p>
-                        <p>Tahun: 2025</p>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <img src="images/certificate2.pdf" alt="Sertifikat Pelatihan 2">
-                    <div class="certificate-info">
-                        <h3>Memulai Pemrograman Dengan C</h3>
-                        <p>Penerbit: Dicoding</p>
-                        <p>Tahun: 2025</p>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <img src="images/certificate3.pdf" alt="Sertifikat Pelatihan 3">
-                    <div class="certificate-info">
-                        <h3>Belajar Dasar Manajemen Proyek</h3>
-                        <p>Penerbit: Dicoding</p>
-                        <p>Tahun: 2025</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2 class="section-title">Pengalaman Proyek</h2>
+            <h2 class="section-title">Proyek Pilihan</h2>
             <div class="portfolio-grid">
                 <div class="project-card">
+                    <!-- Gunakan placeholder image jika project1.jpg tidak tersedia -->
+                    <img src="[https://placehold.co/400x200/112240/FFC000?text=Proyek+1](https://placehold.co/400x200/112240/FFC000?text=Proyek+1)" alt="Proyek Pengobatan Usada Yeh" onerror="this.onerror=null; this.src='[https://placehold.co/400x200/112240/FFC000?text=Proyek+1](https://placehold.co/400x200/112240/FFC000?text=Proyek+1)'">
                     <div class="project-info">
                         <h3>Tugas Kuliah Pembuatan Web Pengobatan Tradisional</h3>
                         <p>Penggunaan usada yeh sebagai sarana pengobatan tradisional khas bali.</p>
-                        <a href="https://github.com/Sudo-Kusanagi/usada_yeh" target="_blank">Lihat Proyek</a>
+                        <a href="[https://github.com/Sudo-Kusanagi/usada_yeh](https://github.com/Sudo-Kusanagi/usada_yeh)" target="_blank">Lihat Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <!-- Gunakan placeholder image jika project2.jpg tidak tersedia -->
+                    <img src="[https://placehold.co/400x200/112240/FFC000?text=Proyek+2](https://placehold.co/400x200/112240/FFC000?text=Proyek+2)" alt="Proyek Desain Logo" onerror="this.onerror=null; this.src='[https://placehold.co/400x200/112240/FFC000?text=Proyek+2](https://placehold.co/400x200/112240/FFC000?text=Proyek+2)'">
+                    <div class="project-info">
+                        <h3>Desain Logo</h3>
+                        <p>Desain logo untuk sebuah merek fashion.</p>
+                        <a href="#" target="_blank">Lihat Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <!-- Gunakan placeholder image jika project3.jpg tidak tersedia -->
+                    <img src="[https://placehold.co/400x200/112240/FFC000?text=Proyek+3](https://placehold.co/400x200/112240/FFC000?text=Proyek+3)" alt="Proyek Poster" onerror="this.onerror=null; this.src='[https://placehold.co/400x200/112240/FFC000?text=Proyek+3](https://placehold.co/400x200/112240/FFC000?text=Proyek+3)'">
+                    <div class="project-info">
+                        <h3>Poster Kampanye Sosial</h3>
+                        <p>Poster visual untuk kampanye edukasi.</p>
+                        <a href="#" target="_blank">Lihat Proyek</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section animate">
         <div class="container">
             <h2 class="section-title">Hubungi Saya</h2>
             <div class="contact-grid">
                 <a href="mailto:christianbenharto@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
                     <h3>Email</h3>
                     <p>christianbenharto@gmail.com</p>
                 </a>
-                <a href="https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/" target="_blank" class="contact-card">
+                <a href="[https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/](https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/)" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
                     <h3>LinkedIn</h3>
                     <p>Christian Yegar S. B.</p>
                 </a>
-                <a href="https://github.com/chrstianyg" target="_blank" class="contact-card">
+                <a href="[https://github.com/chrstianyg](https://github.com/chrstianyg)" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
                     <h3>GitHub</h3>
                     <p>@chrstianyg</p>
+                </a>
+                <a href="[https://instagram.com/chrstian.ygr](https://instagram.com/chrstian.ygr)" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@chrstian.ygr</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="comments" class="section comments-section">
-        <div class="container">
-            <h2 class="comments-title">Feedback</h2>
-            <div class="comment-form-container">
-                <form id="commentForm">
-                    <input type="text" name="name" placeholder="Nama Anda" required>
-                    <textarea name="comment" placeholder="Tulis komentar Anda di sini..." required></textarea>
-                    <button type="submit">Post Comment</button>
-                </form>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 Christian Yegar. Semua Hak Cipta Dilindungi.</p>
         </div>
     </footer>
+    
+    <script src="script.js"></script>
 
-
+</body>
+</html>
