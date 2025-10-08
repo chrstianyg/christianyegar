@@ -76,7 +76,7 @@ nav a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 500;
-    margin-left: 15px; /* Margin diperkecil untuk kerapian */
+    margin-left: 15px;
     transition: color 0.3s;
     white-space: nowrap;
 }
@@ -88,7 +88,7 @@ nav a:hover {
 
 /* --- Bagian Hero --- */
 .hero-section {
-    /* Perbaikan: Tambahkan padding-top yang cukup agar tidak tertutup sticky header */
+    /* Padding diperbesar untuk memberi ruang bagi sticky header */
     padding: 150px 0 100px; 
 }
 
@@ -253,9 +253,6 @@ nav a:hover {
     align-items: center;
     gap: 15px;
 }
-.hobby-list li:hover, .education-list li:hover {
-    transform: none;
-}
 
 .hobby-list i, .education-list i {
     color: var(--accent);
@@ -316,11 +313,12 @@ nav a:hover {
 
 /* Gaya Progress Bar */
 .skill-bar-container {
-    height: 8px;
+    height: 8px; /* PENTING: Untuk membuat bar terlihat */
     background-color: #33445c;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .bar-fill {
