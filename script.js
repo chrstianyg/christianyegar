@@ -1,48 +1,400 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Fungsi untuk menganimasikan progress bar
-    const animateSkillBars = () => {
-        const skillBars = document.querySelectorAll('.bar-fill');
-        skillBars.forEach(bar => {
-            const targetWidth = bar.style.width;
-            
-            // Set ke nol untuk inisialisasi transisi
-            bar.style.width = '0'; 
-            
-            // Gunakan setTimeout untuk memicu transisi CSS setelah browser merender
-            setTimeout(() => {
-                // Terapkan width asli yang ada di HTML (misal '90%')
-                bar.style.width = targetWidth; 
-            }, 100); 
-        });
-    };
+/* --- Styling Dasar & Kontainer --- */
+:root {
+    /* --- Warna: Biru Navy, Biru Kehijauan, dan Kuning Gelap --- */
+    --bg-dark: #0A192F; /* Navy Gelap */
+    --bg-card: #112240; /* Navy Lebih Terang */
+    --text-light: #ccd6f6; /* Hampir Putih */
+    --accent: #FFC000; /* Kuning Gelap (Aksen Utama) */
+    --accent-secondary: #64FFDA; /* Biru Kehijauan (Aksen Sekunder/Hover) */
+    --shadow: rgba(0, 0, 0, 0.6);
+}
 
-    // Fungsi untuk animasi fade-in saat menggulir
-    const animateSections = () => {
-        const sections = document.querySelectorAll('.animate');
-        const windowHeight = window.innerHeight;
-        let skillsAnimated = false; // Flag untuk memastikan animasi bar hanya berjalan sekali
-        
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            
-            if (sectionTop < windowHeight * 0.8) {
-                section.classList.add('animated');
-                
-                // Panggil fungsi animasi bar saat bagian about (yang berisi skills) terlihat
-                // dan pastikan hanya berjalan sekali
-                if (section.id === 'about' && !skillsAnimated) {
-                    animateSkillBars();
-                    skillsAnimated = true;
-                }
-            }
-        });
-    };
+html {
+    scroll-behavior: smooth;
+}
 
-    // Panggil fungsi saat halaman dimuat dan saat menggulir
-    window.addEventListener('load', animateSections);
-    window.addEventListener('scroll', animateSections);
-    
-    // Panggil animateSections secara manual saat DOMContentLoaded selesai
-    animateSections(); 
-});
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+/* --- Animasi --- */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Header & Navigasi --- */
+header {
+    background-color: var(--bg-dark);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: var(--text-light);
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* --- Bagian Hero --- */
+.hero-section {
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, var(--text-light), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent-secondary);
+    color: var(--bg-dark);
+}
+
+/* --- Bagian Tentang Saya, Hobi, & Pendidikan --- */
+.about-section {
+    background-color: var(--bg-dark);
+}
+
+.about-title {
+    font-size: 2.5em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    margin-bottom: 80px;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.about-text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-description {
+    line-height: 1.8;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.about-image {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.download-cv-btn, .portfolio-btn {
+    display: inline-block;
+    background-color: var(--bg-card);
+    color: var(--text-light);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border: 1px solid var(--accent);
+}
+
+.download-cv-btn:hover, .portfolio-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
+
+/* --- Card untuk Konten (Hobi, Edukasi, Skill) --- */
+.card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.card .section-title {
+    text-align: center;
+}
+
+/* Konten Hobi & Pendidikan Grid */
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.hobby-list h3, .education-list h3 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: left;  
+}
+
+.hobby-list ul, .education-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-list li, .education-list li {
+    background-color: transparent;
+    padding: 10px 0;
+    border-left: none;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hobby-list i, .education-list i {
+    color: var(--accent);
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+/* --- Keahlian (Tech Stack) --- */
+.skills-grid-container {
+    padding-top: 80px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.skill-item {
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.skill-header {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.skill-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--text-light);
+}
+
+.skill-header span {
+    font-weight: 600;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+/* Gaya Progress Bar */
+.skill-bar-container {
+    height: 8px;
+    background-color: #33445c;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent));
+    transition: width 1s ease-out;
+}
+
+/* --- Bagian Portofolio --- */
+.portfolio-section {
+    background-color: var(--bg-card);
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    border-bottom: 3px solid var(--accent);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    color: var(--text-light);
+    margin-top: 0;
+}
+
+/* --- Bagian Kontak --- */
+.contact-section {
+    text-align: center;
+}
+
+/* --- Tambahan untuk Logo Bahasa Pemrograman --- */
+.skill-title-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antara ikon dan teks */
+}
+
+.skill-title-group i {
+    font-size: 1.8em;
+    color: var(--accent);
+}
+
+.skill-header h3 {
+    margin-bottom: 0; /* Menghapus margin bawah dari h3 */
+}
+
+
+/* --- Tambahan untuk Ikon Sosial Media --- */
+.social-media-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-media-links a {
+    color: var(--text-light);
+    font-size: 2.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media-links a:hover {
+    color: var(--accent);
+    transform: translateY(-5px);
+}
