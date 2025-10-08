@@ -152,7 +152,7 @@ nav a:hover {
     align-items: center;
     gap: 50px;
     text-align: left;
-    margin-bottom: 80px; /* Jarak sebelum bagian Hobi/Edukasi */
+    margin-bottom: 80px;
 }
 
 .about-text-content {
@@ -194,7 +194,6 @@ nav a:hover {
     transition: background-color 0.3s, transform 0.3s, color 0.3s;
     border: 1px solid var(--accent);
 }
-/* --- MELANJUTKAN DARI POTONGAN KODE SEBELUMNYA --- */
 
 .download-cv-btn:hover, .portfolio-btn:hover {
     background-color: var(--accent);
@@ -204,13 +203,13 @@ nav a:hover {
 
 /* --- GAYA BARU: CARD UNTUK KONTEN (HOBI, EDUKASI, SKILL) --- */
 .card {
-    background-color: var(--bg-card); /* Latar belakang Navy lebih terang */
+    background-color: var(--bg-card);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px var(--shadow);
     transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%; /* Penting untuk grid */
-    text-align: center;
+    height: 100%;
+    text-align: left; /* Atur card rata kiri agar konten di dalamnya rapi */
 }
 
 .card:hover {
@@ -218,20 +217,24 @@ nav a:hover {
     box-shadow: 0 8px 25px var(--shadow);
 }
 
+.card .section-title {
+    text-align: center; /* Judul di dalam card tetap rata tengah */
+}
+
 /* Konten Baru: Hobi & Pendidikan Grid */
 .about-content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px; /* Diubah menjadi 30px */
+    gap: 30px;
     text-align: left;
     margin-top: 50px;
 }
 
 .hobby-list h3, .education-list h3 {
-    color: var(--accent); /* Kuning gelap untuk sub-judul */
+    color: var(--accent);
     margin-top: 0;
     font-size: 1.2em;
-    text-align: left; /* Teks di dalam card kembali rata kiri */
+    text-align: left; 
 }
 
 /* Hobi List Styles */
@@ -240,7 +243,6 @@ nav a:hover {
     padding: 0;
 }
 
-/* Menghapus background dan border list item karena sudah ada di card */
 .hobby-list li, .education-list li {
     background-color: transparent;
     padding: 10px 0;
@@ -251,7 +253,7 @@ nav a:hover {
     gap: 15px;
 }
 .hobby-list li:hover, .education-list li:hover {
-    transform: none; /* Hapus efek hover di list item */
+    transform: none;
 }
 
 .hobby-list i, .education-list i {
@@ -269,14 +271,14 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 15px;
-    margin-top: 0; /* Margin dipindahkan ke .skills-grid-container */
+    margin-top: 20px; /* Jarak dari judul card ke item pertama */
     text-align: left;
 }
 
-/* Menghapus padding dan box-shadow dari skill-item (karena sudah dibungkus .card) */
+/* Gaya item skill di dalam card */
 .skill-item {
+    padding: 10px; /* Padding di dalam grid card */
     background-color: transparent;
-    padding: 0;
     box-shadow: none;
 }
 
@@ -284,7 +286,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .skill-header h3 {
@@ -303,7 +305,6 @@ nav a:hover {
     height: 28px;
     object-fit: contain;
     margin-right: 15px;
-    color: white; /* Ganti warna ikon sesuai warna spesifik di HTML */
 }
 
 .skill-title-group {
@@ -317,6 +318,7 @@ nav a:hover {
     background-color: #33445c;
     border-radius: 4px;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .bar-fill {
@@ -475,9 +477,11 @@ footer {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    /* Perbaikan agar teks di dalam card responsif tetap rata kiri */
     .hobby-list h3, .education-list h3 {
-        text-align: center;
+        text-align: left;
+    }
+    .card {
+        text-align: left;
     }
 }
 
