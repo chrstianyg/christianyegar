@@ -1,221 +1,212 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Yegar - Portofolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Yegar - Portofolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <h1>PortfoliobyJegarr</h1>
-            </div>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>PortfoliobyJegarr</h1>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#certificates">Sertifikasi</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
 
-            <button class="hamburger-btn" id="hamburger-btn" aria-label="Buka menu navigasi">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Christian Yegar Sahaduta Benharto</h1>
+                    <p>Bersemangat dalam menerjemahkan desain visual menjadi kode yang fungsional dan efisien untuk menciptakan pengalaman pengguna yang mulus.</p>
+                    <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
 
-            <nav id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Pengalaman</a>
-                <a href="#certificates" class="nav-link">Sertifikasi</a>
-                <a href="#portfolio" class="nav-link">Portofolio</a>
-                <a href="#contact" class="nav-link">Kontak</a>
-            </nav>
-        </div>
-    </header>
+                <div class="about-flex-container">
+                    <div class="about-text-content">
+                        <p class="about-description">Sebagai seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha, saya memiliki passion kuat untuk menjembatani dunia desain grafis dan teknologi. Saya berfokus pada penciptaan visual yang tidak hanya estetik, tetapi juga komunikatif.</p>
+                        <p class="about-description">Selain itu, saya terus mendalami UI/UX Design untuk merancang pengalaman digital yang intuitif dan fungsional. Saya percaya, perpaduan antara seni dan logika adalah kunci untuk membangun solusi digital yang berkesan di era modern ini.</p>
+                        <div class="button-group">
+                            <a href="./images/Christian Yegar Sahaduta Benharto CV.pdf" class="download-cv-btn" download>Unduh CV Saya</a>
+                            <a href="./images/Portfoliobyjegarr.pdf" class="portfolio-btn" target="_blank">Lihat Portofolio Desain</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="./images/IMG_7588 copy.jpg" alt="Foto Profil Christian Yegar">
+                    </div>
+                </div>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Christian Yegar Sahaduta Benharto</h1>
-                    <p>Bersemangat dalam menerjemahkan desain visual menjadi kode yang fungsional dan efisien untuk menciptakan pengalaman pengguna yang mulus</p>
-                    <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content-grid">
+                    <div id="hobbies" class="hobby-list card">
+                        <h2 class="section-title" style="margin-bottom: 20px;">Hobi</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-camera"></i> <div><h3>Fotografi & Videografi</h3><p>Mengabadikan momen dan bercerita melalui visual.</p></div></li>
+                            <li><i class="fa-solid fa-music"></i> <div><h3>Musik</h3><p>Menikmati dan mendalami berbagai genre musik.</p></div></li>
+                            <li><i class="fa-solid fa-paint-brush"></i> <div><h3>Desain Grafis</h3><p>Menciptakan visual yang estetik dan komunikatif.</p></div></li>
+                            <li><i class="fa-solid fa-gamepad"></i> <div><h3>Main Game</h3><p>Meningkatkan keterampilan berpikir strategis dan cepat.</p></div></li>
+                        </ul>
+                    </div>
+                    <div id="education" class="education-list card">
+                        <h2 class="section-title" style="margin-bottom: 20px;">Pendidikan</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-graduation-cap"></i> <div><h3>Sistem Informasi, Undiksha</h3><p>Sedang menempuh pendidikan (2024 - 2028)</p></div></li>
+                            <li><i class="fa-solid fa-school"></i> <div><h3>SMKN 3 Singaraja</h3><p>Lulusan tahun 2024, Jurusan Desain Komunikasi Visual</p></div></li>
+                            <li><i class="fa-solid fa-school"></i> <div><h3>SMPN 1 Singaraja</h3><p>Lulusan tahun 2021</p></div></li>
+                            <li><i class="fa-solid fa-school"></i> <div><h3>SDN 1 Astina</h3><p>Lulusan tahun 2019</p></div></li>
+                        </ul>
+                    </div>
+                </div>
 
-                <div class="about-flex-container">
-                    <div class="about-text-content">
-                        <p class="about-description">Sebagai seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha, saya memiliki passion kuat untuk menjembatani dunia desain grafis dan teknologi. Saya berfokus pada penciptaan visual yang tidak hanya estetik, tetapi juga komunikatif.</p>
-                        <p class="about-description">Selain itu, saya terus mendalami UI/UX Design untuk merancang pengalaman digital yang intuitif dan fungsional. Saya percaya, perpaduan antara seni dan logika adalah kunci untuk membangun solusi digital yang berkesan di era modern ini.</p>
-                        <div class="button-group">
-                            <a href="./images/Christian Yegar Sahaduta Benharto CV.pdf" class="download-cv-btn" download>Unduh CV Saya</a>
-                            <a href="./images/Portfoliobyjegarr.pdf" class="portfolio-btn" target="_blank">Lihat Portofolio Desain</a>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="./images/IMG_7588 copy.jpg" alt="Foto Profil Christian Yegar">
-                    </div>
-                </div>
+                <div class="skills-grid-container">
+                    <h2 class="section-title" style="margin-top: 80px;">Penguasaan Bahasa Pemrograman</h2>
+                    <div class="card">
+                         <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-python"></i><h3>Python</h3></div><span>40%</span></div>
+                                <div class="skill-bar-container"><div class="bar-fill" style="width: 40%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div><span>35%</span></div>
+                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div><span>35%</span></div>
+                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div><span>35%</span></div>
+                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-java"></i><h3>Java</h3></div><span>30%</span></div>
+                                <div class="skill-bar-container"><div class="bar-fill" style="width: 30%;"></div></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="about-content-grid">
-                    <div id="hobbies" class="hobby-list card">
-                        <h2 class="section-title" style="margin-bottom: 20px;">Hobi</h2>
-                        <ul>
-                            <li><i class="fa-solid fa-camera"></i> <div><h3>Fotografi & Videografi</h3><p>Mengabadikan momen dan bercerita melalui visual.</p></div></li>
-                            <li><i class="fa-solid fa-music"></i> <div><h3>Musik</h3><p>Menikmati dan mendalami berbagai genre musik.</p></div></li>
-                            <li><i class="fa-solid fa-paint-brush"></i> <div><h3>Desain Grafis</h3><p>Menciptakan visual yang estetik dan komunikatif.</p></div></li>
-                            <li><i class="fa-solid fa-gamepad"></i> <div><h3>Main Game</h3><p>Meningkatkan keterampilan berpikir strategis dan cepat.</p></div></li>
-                        </ul>
-                    </div>
-                    <div id="education" class="education-list card">
-                        <h2 class="section-title" style="margin-bottom: 20px;">Pendidikan</h2>
-                        <ul>
-                            <li><i class="fa-solid fa-graduation-cap"></i> <div><h3>Sistem Informasi, Undiksha</h3><p>Sedang menempuh pendidikan (2024 - 2028)</p></div></li>
-                            <li><i class="fa-solid fa-school"></i> <div><h3>SMKN 3 Singaraja</h3><p>Lulusan tahun 2024, Jurusan Desain Komunikasi Visual</p></div></li>
-                            <li><i class="fa-solid fa-school"></i> <div><h3>SMPN 1 Singaraja</h3><p>Lulusan tahun 2021</p></div></li>
-                            <li><i class="fa-solid fa-school"></i> <div><h3>SDN 1 Astina</h3><p>Lulusan tahun 2019</p></div></li>
-                        </ul>
-                    </div>
-                </div>
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Desember 2023 - Mei 2024</div>
+                        <div class="timeline-content card">
+                            <h3>Magang</h3>
+                            <p class="timeline-company">Dinas Kominfosanti Kab. Buleleng</p>
+                            <ul>
+                                <li>Bertanggung jawab dalam pengelolaan konten media sosial dan website resmi.</li>
+                                <li>Terlibat dalam proses desain materi publikasi digital dan cetak.</li>
+                                <li>Membantu dokumentasi (foto & video) pada acara-acara kedinasan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Sekarang</div>
+                        <div class="timeline-content card">
+                            <h3>Ketua Divisi Media Creative</h3>
+                            <p class="timeline-company">Lion of Judah</p>
+                            <ul>
+                                <li>Memimpin tim untuk merancang dan memproduksi semua kebutuhan visual & multimedia organisasi.</li>
+                                <li>Mengembangkan konsep kreatif untuk kampanye dan acara.</li>
+                                <li>Mengelola jadwal produksi dan publikasi konten.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="skills-grid-container">
-                    <h2 class="section-title" style="margin-top: 80px;">Penguasaan Bahasa Pemrograman</h2>
-                    <div class="card">
-                         <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-python"></i><h3>Python</h3></div><span>40%</span></div>
-                                <div class="skill-bar-container"><div class="bar-fill" style="width: 40%;"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div><span>35%</span></div>
-                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div><span>35%</span></div>
-                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div><span>35%</span></div>
-                                <div class="skill-bar-container"><div class="bar-fill" style="width: 35%;"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header"><div class="skill-title-group"><i class="fa-brands fa-java"></i><h3>Java</h3></div><span>30%</span></div>
-                                <div class="skill-bar-container"><div class="bar-fill" style="width: 30%;"></div></div>
-                            </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="certificates" class="section certificates-section">
+            <div class="container">
+                <h2 class="section-title">Sertifikasi</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card card">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Belajar Membuat Aplikasi Web dengan React</h3>
+                        <p>Dicoding Indonesia</p>
+                        <a href="https://www.dicoding.com/certificates/N9ZO25N2RPG5" class="certificate-link" target="_blank">Lihat Sertifikat</a>
+                    </div>
+                    <div class="certificate-card card">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Belajar Membuat Front-End Web untuk Pemula</h3>
+                        <p>Dicoding Indonesia</p>
+                        <a href="https://www.dicoding.com/certificates/QLZ96415MZ5D" class="certificate-link" target="_blank">Lihat Sertifikat</a>
+                    </div>
+                    <div class="certificate-card card">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Belajar Dasar Pemrograman Web</h3>
+                        <p>Dicoding Indonesia</p>
+                        <a href="https://www.dicoding.com/certificates/98XWOV0O9ZM3" class="certificate-link" target="_blank">Lihat Sertifikat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="experience" class="section experience-section">
-            <div class="container">
-                <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
-                <div class="experience-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Desember 2023 - Mei 2024</div>
-                        <div class="timeline-content card">
-                            <h3>Magang</h3>
-                            <p class="timeline-company">Dinas Kominfosanti Kab. Buleleng</p>
-                            <ul>
-                                <li>Bertanggung jawab dalam pengelolaan konten media sosial dan website resmi.</li>
-                                <li>Terlibat dalam proses desain materi publikasi digital dan cetak.</li>
-                                <li>Membantu dokumentasi (foto & video) pada acara-acara kedinasan.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2023 - Sekarang</div>
-                        <div class="timeline-content card">
-                            <h3>Ketua Divisi Media Creative</h3>
-                            <p class="timeline-company">Lion of Judah</p>
-                            <ul>
-                                <li>Memimpin tim untuk merancang dan memproduksi semua kebutuhan visual & multimedia organisasi.</li>
-                                <li>Mengembangkan konsep kreatif untuk kampanye dan acara.</li>
-                                <li>Mengelola jadwal produksi dan publikasi konten.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="portfolio" class="section portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Proyek Saya</h2>
+                <div class="portfolio-grid" style="max-width: 450px; margin: 0 auto;">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/112240/FFC000?text=Usada+Yeh" alt="Gambar Proyek Usada Yeh">
+                        <div class="project-info">
+                            <h3>Web Pengobatan Tradisional Usada Yeh</h3>
+                            <p>Proyek tugas yang membangun sebuah website informatif mengenai metode pengobatan tradisional Bali, Usada Yeh. Dibuat menggunakan teknologi web fundamental.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sudo-kusanagi.github.io/usada_yeh/" class="project-btn" target="_blank">Live Demo</a>
+                                <a href="https://github.com/Sudo-Kusanagi/usada_yeh" class="project-btn" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="certificates" class="section certificates-section">
-            <div class="container">
-                <h2 class="section-title">Sertifikasi</h2>
-                <div class="certificates-grid">
-                    <div class="certificate-card card">
-                        <i class="fa-solid fa-award"></i>
-                        <h3>Belajar Membuat Aplikasi Web dengan React</h3>
-                        <p>Dicoding Indonesia</p>
-                        <a href="https://www.dicoding.com/certificates/N9ZO25N2RPG5" class="certificate-link" target="_blank">Lihat Sertifikat</a>
-                    </div>
-                    <div class="certificate-card card">
-                        <i class="fa-solid fa-award"></i>
-                        <h3>Belajar Membuat Front-End Web untuk Pemula</h3>
-                        <p>Dicoding Indonesia</p>
-                        <a href="https://www.dicoding.com/certificates/QLZ96415MZ5D" class="certificate-link" target="_blank">Lihat Sertifikat</a>
-                    </div>
-                    <div class="certificate-card card">
-                        <i class="fa-solid fa-award"></i>
-                        <h3>Belajar Dasar Pemrograman Web</h3>
-                        <p>Dicoding Indonesia</p>
-                        <a href="https://www.dicoding.com/certificates/98XWOV0O9ZM3" class="certificate-link" target="_blank">Lihat Sertifikat</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p style="opacity: 0.8; margin-bottom: 30px;">Jangan ragu untuk menghubungi saya melalui email atau terhubung di media sosial.</p>
+                <a href="mailto:christianbenharto@gmail.com" class="cta-button">Kirim Email</a>
+                <div class="social-media-links">
+                    <a href="https://www.instagram.com/chrstianyg/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/chrstianyg" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <section id="portfolio" class="section portfolio-section">
-            <div class="container">
-                <h2 class="section-title">Proyek Saya</h2>
-                <div class="portfolio-grid" style="max-width: 450px; margin: 0 auto;">
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/112240/FFC000?text=Usada+Yeh" alt="Gambar Proyek Usada Yeh">
-                        <div class="project-info">
-                            <h3>Web Pengobatan Tradisional Usada Yeh</h3>
-                            <p>Proyek tugas yang membangun sebuah website informatif mengenai metode pengobatan tradisional Bali, Usada Yeh. Dibuat menggunakan teknologi web fundamental.</p>
-                            <div class="project-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://sudo-kusanagi.github.io/usada_yeh/" class="project-btn" target="_blank">Live Demo</a>
-                                <a href="https://github.com/Sudo-Kusanagi/usada_yeh" class="project-btn" target="_blank">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">Hubungi Saya</h2>
-                <p style="opacity: 0.8; margin-bottom: 30px;">Jangan ragu untuk menghubungi saya melalui email atau terhubung di media sosial.</p>
-                <a href="mailto:christianbenharto@gmail.com" class="cta-button">Kirim Email</a>
-                <div class="social-media-links">
-                    <a href="https://www.instagram.com/chrstianyg/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/chrstianyg" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/christian-yegar-sahaduta-benharto-84b238385/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
-    </main>
-        </section>
-    </main>
-
-    <script src="./script.js"></script> </body>
-</html>
-</body>
+    </body>
 </html>
