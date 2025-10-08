@@ -531,3 +531,58 @@ nav a:hover {
     color: var(--accent);
     transform: translateY(-5px);
 }
+
+/* ============================================= */
+/* --- STYLING UNTUK NAVIGASI RESPONSIVE --- */
+/* ============================================= */
+
+/* Tombol Hamburger */
+.hamburger-btn {
+    display: none; /* Sembunyikan di desktop */
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.8em;
+    cursor: pointer;
+    z-index: 1001; /* Pastikan di atas segalanya */
+}
+
+/* Menu Navigasi Mobile (Default Tersembunyi) */
+@media (max-width: 850px) {
+    .hamburger-btn {
+        display: block; /* Tampilkan tombol di mobile */
+    }
+
+    nav {
+        /* Sembunyikan menu di luar layar ke kanan */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        padding-top: 80px;
+
+        /* Atur tampilan jadi vertikal */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        /* Styling visual */
+        background-color: var(--bg-card);
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Style untuk link di menu mobile */
+    nav a.nav-link {
+        color: var(--text-light);
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    /* Class 'nav-active' yang ditambahkan oleh JavaScript */
+    nav.nav-active {
+        right: 0; /* Tampilkan menu dengan menggeser ke dalam layar */
+    }
+}
