@@ -30,7 +30,6 @@ body {
 
 .section {
     padding: 100px 0;
-    text-align: center;
 }
 
 /* --- Animasi --- */
@@ -67,7 +66,6 @@ header {
     margin: 0;
 }
 
-/* --- PERBAIKAN NAVIGASI --- */
 nav {
     display: flex;
 }
@@ -84,18 +82,17 @@ nav a {
 nav a:hover {
     color: var(--accent);
 }
-/* --- AKHIR PERBAIKAN NAVIGASI --- */
 
 /* --- Bagian Hero --- */
 .hero-section {
-    padding: 150px 0 100px; 
+    padding: 150px 0 100px;
+    text-align: center;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -146,17 +143,18 @@ nav a:hover {
     text-align: center;
 }
 
-/* Perbaikan untuk layout Teks dan Gambar "Tentang Saya" */
 .about-flex-container {
     display: flex;
     align-items: center;
     gap: 50px;
     text-align: left;
     margin-bottom: 80px;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
 }
 
 .about-text-content {
     flex: 1;
+    min-width: 300px;
 }
 
 .about-description {
@@ -167,6 +165,7 @@ nav a:hover {
 
 .about-image {
     flex-shrink: 0;
+    text-align: center;
 }
 
 .about-image img {
@@ -184,25 +183,24 @@ nav a:hover {
     justify-content: flex-start;
 }
 
-/* GAYA TOMBOL IDENTIK (CV dan Portfolio) */
 .download-cv-btn, .portfolio-btn {
     display: inline-block;
-    background-color: var(--bg-card); /* Latar belakang Navy (Terisi Penuh) */
-    color: var(--text-light); /* Teks Putih */
+    background-color: var(--bg-card);
+    color: var(--text-light);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s, color 0.3s;
-    border: 1px solid var(--accent); /* Border Kuning */
+    border: 1px solid var(--accent);
 }
 
 .download-cv-btn:hover, .portfolio-btn:hover {
-    background-color: var(--accent); /* Kuning di hover */
-    color: var(--bg-dark); /* Teks Navy saat hover */
+    background-color: var(--accent);
+    color: var(--bg-dark);
     transform: translateY(-3px);
 }
 
-/* --- GAYA BARU: CARD UNTUK KONTEN (HOBI, EDUKASI, SKILL) --- */
+/* --- Card untuk Konten (Hobi, Edukasi, Skill) --- */
 .card {
     background-color: var(--bg-card);
     padding: 30px;
@@ -222,7 +220,7 @@ nav a:hover {
     text-align: center;
 }
 
-/* Konten Baru: Hobi & Pendidikan Grid */
+/* Konten Hobi & Pendidikan Grid */
 .about-content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,10 +233,9 @@ nav a:hover {
     color: var(--accent);
     margin-top: 0;
     font-size: 1.2em;
-    text-align: left; 
+    text-align: left;  
 }
 
-/* Hobi List Styles */
 .hobby-list ul, .education-list ul {
     list-style: none;
     padding: 0;
@@ -260,7 +257,7 @@ nav a:hover {
     flex-shrink: 0;
 }
 
-/* KEAHLIAN BARU: TECH STACK (Penguasaan Bahasa Pemrograman) */
+/* --- Keahlian (Tech Stack) --- */
 .skills-grid-container {
     padding-top: 80px;
 }
@@ -268,12 +265,11 @@ nav a:hover {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
+    gap: 25px;
     margin-top: 20px;
     text-align: left;
 }
 
-/* Gaya item skill di dalam card */
 .skill-item {
     padding: 10px;
     background-color: transparent;
@@ -281,7 +277,7 @@ nav a:hover {
 }
 
 .skill-header {
-    display: inline-flex; 
+    display: flex;  
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -300,26 +296,12 @@ nav a:hover {
     flex-shrink: 0;
 }
 
-.skill-icon {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    margin-right: 10px;
-    color: white;
-}
-
-.skill-title-group {
-    display: flex;
-    align-items: center;
-}
-
 /* Gaya Progress Bar */
 .skill-bar-container {
-    height: 8px; /* PENTING: Untuk membuat bar terlihat */
+    height: 8px;
     background-color: #33445c;
     border-radius: 4px;
     overflow: hidden;
-    margin-bottom: 10px;
     margin-top: 5px;
 }
 
@@ -368,8 +350,15 @@ nav a:hover {
 
 .project-info {
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .project-info h3 {
-    color: var(--text
+    color: var(--text-light);
+    margin-top: 0;
+}
+
+/* --- Bagian Kontak --- */
+.contact-section {
+    text-align: center;
+}
