@@ -1,11 +1,10 @@
 /* --- Styling Dasar & Kontainer --- */
 :root {
-    /* --- Warna: Biru Navy, Biru Kehijauan, dan Kuning Gelap --- */
-    --bg-dark: #0A192F; /* Navy Gelap */
-    --bg-card: #112240; /* Navy Lebih Terang */
-    --text-light: #ccd6f6; /* Hampir Putih */
-    --accent: #FFC000; /* Kuning Gelap (Aksen Utama) */
-    --accent-secondary: #64FFDA; /* Biru Kehijauan (Aksen Sekunder/Hover) */
+    --bg-dark: #0A192F;
+    --bg-card: #112240;
+    --text-light: #ccd6f6;
+    --accent: #FFC000;
+    --accent-secondary: #64FFDA;
     --shadow: rgba(0, 0, 0, 0.6);
 }
 
@@ -30,18 +29,6 @@ body {
 
 .section {
     padding: 100px 0;
-}
-
-/* --- Animasi --- */
-.animate {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animated {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* --- Header & Navigasi --- */
@@ -149,7 +136,7 @@ nav a:hover {
     gap: 50px;
     text-align: left;
     margin-bottom: 80px;
-    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    flex-wrap: wrap;
 }
 
 .about-text-content {
@@ -244,8 +231,6 @@ nav a:hover {
 .hobby-list li, .education-list li {
     background-color: transparent;
     padding: 10px 0;
-    border-left: none;
-    transition: transform 0.3s;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -296,7 +281,6 @@ nav a:hover {
     flex-shrink: 0;
 }
 
-/* Gaya Progress Bar */
 .skill-bar-container {
     height: 8px;
     background-color: #33445c;
@@ -308,7 +292,6 @@ nav a:hover {
 .bar-fill {
     height: 100%;
     background: linear-gradient(90deg, var(--accent-secondary), var(--accent));
-    transition: width 1s ease-out;
 }
 
 /* --- Bagian Portofolio --- */
@@ -363,11 +346,10 @@ nav a:hover {
     text-align: center;
 }
 
-/* --- Tambahan untuk Logo Bahasa Pemrograman --- */
 .skill-title-group {
     display: flex;
     align-items: center;
-    gap: 15px; /* Jarak antara ikon dan teks */
+    gap: 15px;
 }
 
 .skill-title-group i {
@@ -376,11 +358,9 @@ nav a:hover {
 }
 
 .skill-header h3 {
-    margin-bottom: 0; /* Menghapus margin bawah dari h3 */
+    margin-bottom: 0;
 }
 
-
-/* --- Tambahan untuk Ikon Sosial Media --- */
 .social-media-links {
     margin-top: 40px;
     display: flex;
