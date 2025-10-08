@@ -313,7 +313,7 @@ nav a:hover {
 
 /* Gaya Progress Bar */
 .skill-bar-container {
-    height: 8px; /* PENTING: Untuk membuat bar terlihat */
+    height: 8px; 
     background-color: #33445c;
     border-radius: 4px;
     overflow: hidden;
