@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateSkillBars = () => {
         const skillBars = document.querySelectorAll('.bar-fill');
         skillBars.forEach(bar => {
-            // HANYA animasikan bar yang belum pernah dianimasikan
             const currentWidth = bar.style.width;
             
             // Set ke nol untuk inisialisasi transisi
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 section.classList.add('animated');
                 // Panggil fungsi animasi bar saat bagian skills terlihat
                 if (section.id === 'about') {
-                    // Hanya panggil sekali, pastikan bar-fill reset dulu
                     animateSkillBars();
                 }
             }
