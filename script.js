@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateSkillBars = () => {
         const skillBars = document.querySelectorAll('.bar-fill');
         skillBars.forEach(bar => {
-            const currentWidth = bar.style.width;
+            const targetWidth = bar.style.width;
             
             // Set ke nol untuk inisialisasi transisi
             bar.style.width = '0'; 
             
             // Gunakan setTimeout untuk memicu transisi CSS setelah browser merender
             setTimeout(() => {
-                // Terapkan width asli yang ada di HTML (misal '80%')
-                bar.style.width = currentWidth; 
+                // Terapkan width asli yang ada di HTML (misal '90%')
+                bar.style.width = targetWidth; 
             }, 100); 
         });
     };
@@ -21,15 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateSections = () => {
         const sections = document.querySelectorAll('.animate');
         const windowHeight = window.innerHeight;
+        let skillsAnimated = false; // Flag untuk memastikan animasi bar hanya berjalan sekali
         
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
             
             if (sectionTop < windowHeight * 0.8) {
                 section.classList.add('animated');
-                // Panggil fungsi animasi bar saat bagian skills terlihat
-                if (section.id === 'about') {
+                
+                // Panggil fungsi animasi bar saat bagian about (yang berisi skills) terlihat
+                // dan pastikan hanya berjalan sekali
+                if (section.id === 'about' && !skillsAnimated) {
                     animateSkillBars();
+                    skillsAnimated = true;
                 }
             }
         });
