@@ -1,67 +1,195 @@
-<div class="skills-grid-container">
-    <h2 class="section-title" style="margin-top: 80px;">Penguasaan Bahasa Pemrograman</h2>
-    <div class="card">
-         <div class="skills-grid">
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-title-group">
-                        <i class="fa-brands fa-html5"></i>
-                        <h3>HTML5</h3>
-                    </div>
-                    <span>90%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="bar-fill" style="width: 90%;"></div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Yegar - Portofolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>PortfoliobyJegarr</h1>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#hobbies">Hobi</a>
+                <a href="#education">Pendidikan</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section animate">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Christian Yegar Sahaduta Benharto</h1>
+                    <p>Bersemangat dalam mengubah desain menjadi kode yang fungsional dan menjalankan aplikasi di lingkungan modern menggunakan Docker</p>
+                    <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
                 </div>
             </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-title-group">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h3>CSS3</h3>
+        </section>
+        
+        <section id="about" class="section about-section animate">
+            <div class="container">
+                
+                <h2 class="about-title">Tentang Saya</h2>
+
+                <div class="about-flex-container">
+                    <div class="about-text-content">
+                        <p class="about-description">Sebagai seorang mahasiswa Sistem Informasi di Universitas Pendidikan Ganesha, saya memiliki passion kuat untuk menjembatani dunia desain grafis dan teknologi. Saya berfokus pada penciptaan visual yang tidak hanya estetik, tetapi juga komunikatif.</p>
+                        <p class="about-description">Selain itu, saya terus mendalami UI/UX Design untuk merancang pengalaman digital yang intuitif dan fungsional. Saya percaya, perpaduan antara seni dan logika adalah kunci untuk membangun solusi digital yang berkesan di era modern ini.</p>
+                        <div class="button-group">
+                            <a href="images/Christian Yegar Sahaduta Benharto CV.pdf" class="download-cv-btn" download>Unduh CV Saya</a>
+                            <a href="https://www.behance.net/portfoliobyjegarr" class="portfolio-btn" target="_blank">Lihat Portofolio Desain</a>
+                        </div>
                     </div>
-                    <span>85%</span>
+                    <div class="about-image">
+                        <img src="https://placehold.co/400x400/0A192F/FFC000?text=Foto+Profil" alt="Foto Profil Christian Yegar">
+                    </div>
                 </div>
-                <div class="skill-bar-container">
-                    <div class="bar-fill" style="width: 85%;"></div>
+
+                <div class="about-content-grid">
+                    <div id="hobbies" class="hobby-list">
+                        <div class="card">
+                            <h2 class="section-title" style="margin-bottom: 20px;">Hobi</h2>
+                            <ul>
+                                <li><i class="fa-solid fa-camera"></i> <div><h3>Fotografi & Videografi</h3><p>Mengabadikan momen dan bercerita melalui visual.</p></div></li>
+                                <li><i class="fa-solid fa-music"></i> <div><h3>Musik</h3><p>Menikmati dan mendalami berbagai genre musik.</p></div></li>
+                                <li><i class="fa-solid fa-paint-brush"></i> <div><h3>Desain Grafis</h3><p>Menciptakan visual yang estetik dan komunikatif.</p></div></li>
+                                <li><i class="fa-solid fa-gamepad"></i> <div><h3>Main Game</h3><p>Meningkatkan keterampilan berpikir strategis dan cepat.</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="education" class="education-list">
+                        <div class="card">
+                            <h2 class="section-title" style="margin-bottom: 20px;">Pendidikan</h2>
+                            <ul>
+                                <li><i class="fa-solid fa-graduation-cap"></i> <div><h3>Sistem Informasi, Undiksha</h3><p>Sedang menempuh pendidikan (2022 - Sekarang)</p></div></li>
+                                <li><i class="fa-solid fa-school"></i> <div><h3>SMKN 3 Singaraja</h3><p>Teknik Komputer dan Jaringan</p></div></li>
+                                <li><i class="fa-solid fa-school"></i> <div><h3>SMPN 1 Singaraja</h3><p>Lulusan tahun 2019</p></div></li>
+                                <li><i class="fa-solid fa-school"></i> <div><h3>SDN 1 Astina</h3><p>Lulusan tahun 2016</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-grid-container">
+                    <h2 class="section-title" style="margin-top: 80px;">Penguasaan Bahasa Pemrograman</h2>
+                    <div class="card">
+                         <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fa-brands fa-html5"></i>
+                                        <h3>HTML5</h3>
+                                    </div>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <h3>CSS3</h3>
+                                    </div>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fa-brands fa-js"></i>
+                                        <h3>JavaScript</h3>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fa-brands fa-python"></i>
+                                        <h3>Python</h3>
+                                    </div>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="bar-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-title-group">
+                                        <i class="fa-brands fa-java"></i>
+                                        <h3>Java</h3>
+                                    </div>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="bar-fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio-section animate">
+            <div class="container">
+                <h2 class="section-title">Portofolio Saya</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/112240/FFC000?text=Proyek+1" alt="Gambar Proyek 1">
+                        <div class="project-info">
+                            <h3>Judul Proyek Pertama</h3>
+                            <p>Deskripsi singkat tentang proyek ini, teknologi yang digunakan, dan apa tujuannya.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/112240/FFC000?text=Proyek+2" alt="Gambar Proyek 2">
+                        <div class="project-info">
+                            <h3>Judul Proyek Kedua</h3>
+                            <p>Deskripsi singkat tentang proyek ini, teknologi yang digunakan, dan apa tujuannya.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/112240/FFC000?text=Proyek+3" alt="Gambar Proyek 3">
+                        <div class="project-info">
+                            <h3>Judul Proyek Ketiga</h3>
+                            <p>Deskripsi singkat tentang proyek ini, teknologi yang digunakan, dan apa tujuannya.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-title-group">
-                        <i class="fa-brands fa-js"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <span>70%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="bar-fill" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-title-group">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Python</h3>
-                    </div>
-                    <span>75%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="bar-fill" style="width: 75%;"></div>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-title-group">
-                        <i class="fa-brands fa-java"></i>
-                        <h3>Java</h3>
-                    </div>
-                    <span>65%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="bar-fill" style="width: 65%;"></div>
-                </div>
-            </div>
-         </div>
-    </div>
-</div>
+        </section>
+
+        <section id="contact" class="section contact-section animate">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p style="opacity: 0.8; margin-bottom: 30px;">Jangan ragu untuk menghubungi saya melalui email atau terhubung di media sosial.</p>
+                <a href="mailto:emailanda@example.com" class="cta-button">Kirim Email</a>
+                
+                <div class="social-media-links">
+                    <a href="https://www.instagram.com/chrstianyg/" target="_blank" aria-label="Instagram"><i class="fa-brands fa
