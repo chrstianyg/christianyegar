@@ -67,18 +67,18 @@ header {
     margin: 0;
 }
 
-/* --- PERBAIKAN NAVIGASI: Mengurangi Margin untuk Ruang Lebih --- */
+/* --- PERBAIKAN NAVIGASI --- */
 nav {
-    display: flex; /* Tambahkan ini agar tautan bisa menggunakan margin dengan baik */
+    display: flex;
 }
 
 nav a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 500;
-    margin-left: 15px; /* DIUBAH DARI 30px MENJADI 15px */
+    margin-left: 15px; /* Margin diperkecil untuk kerapian */
     transition: color 0.3s;
-    white-space: nowrap; /* Mencegah tautan putus jika ruangnya pas-pasan */
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -189,4 +189,313 @@ nav a:hover {
     background-color: var(--bg-card);
     color: var(--text-light);
     padding: 12px 25px;
-    text-decoration: none
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border: 1px solid var(--accent);
+}
+/* --- MELANJUTKAN DARI POTONGAN KODE SEBELUMNYA --- */
+
+.download-cv-btn:hover, .portfolio-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
+
+/* --- GAYA BARU: CARD UNTUK KONTEN (HOBI, EDUKASI, SKILL) --- */
+.card {
+    background-color: var(--bg-card); /* Latar belakang Navy lebih terang */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Penting untuk grid */
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+/* Konten Baru: Hobi & Pendidikan Grid */
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; /* Diubah menjadi 30px */
+    text-align: left;
+    margin-top: 50px;
+}
+
+.hobby-list h3, .education-list h3 {
+    color: var(--accent); /* Kuning gelap untuk sub-judul */
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: left; /* Teks di dalam card kembali rata kiri */
+}
+
+/* Hobi List Styles */
+.hobby-list ul, .education-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Menghapus background dan border list item karena sudah ada di card */
+.hobby-list li, .education-list li {
+    background-color: transparent;
+    padding: 10px 0;
+    border-left: none;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hobby-list li:hover, .education-list li:hover {
+    transform: none; /* Hapus efek hover di list item */
+}
+
+.hobby-list i, .education-list i {
+    color: var(--accent);
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+/* KEAHLIAN BARU: TECH STACK (Penguasaan Bahasa Pemrograman) */
+.skills-grid-container {
+    padding-top: 80px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 0; /* Margin dipindahkan ke .skills-grid-container */
+    text-align: left;
+}
+
+/* Menghapus padding dan box-shadow dari skill-item (karena sudah dibungkus .card) */
+.skill-item {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--text-light);
+}
+
+.skill-header span {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.skill-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 15px;
+    color: white; /* Ganti warna ikon sesuai warna spesifik di HTML */
+}
+
+.skill-title-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Gaya Progress Bar */
+.skill-bar-container {
+    height: 8px;
+    background-color: #33445c;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent));
+    transition: width 1s ease-out;
+}
+
+/* --- Bagian Portofolio --- */
+.portfolio-section {
+    background-color: var(--bg-card);
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    border-bottom: 3px solid var(--accent);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-info h3 {
+    color: var(--text-light);
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.project-info p {
+    font-size: 0.9em;
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.project-info a {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.project-info a:hover {
+    background-color: var(--accent-secondary);
+}
+
+/* --- Bagian Kontak --- */
+.contact-section {
+    background-color: var(--bg-dark);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow);
+    text-decoration: none;
+    color: var(--text-light);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background-color: #173b64;
+}
+
+.contact-card h3 {
+    font-size: 1.5em;
+    color: var(--accent-secondary);
+    margin: 0 0 5px;
+}
+
+.contact-card p {
+    margin: 0;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #050b16;
+    color: #8892b0;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- Responsif --- */
+@media (max-width: 900px) {
+    .about-flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .about-text-content {
+        order: 2;
+        text-align: center;
+    }
+    .button-group {
+        justify-content: center;
+    }
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Perbaikan agar teks di dalam card responsif tetap rata kiri */
+    .hobby-list h3, .education-list h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
