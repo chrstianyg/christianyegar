@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // Fungsi untuk menganimasikan progress bar
+    const animateSkillBars = () => {
+        const skillBars = document.querySelectorAll('.bar-fill');
+        skillBars.forEach(bar => {
+            // HANYA animasikan bar yang belum pernah dianimasikan
+            const currentWidth = bar.style.width;
+            
+            // Set ke nol untuk inisialisasi transisi
+            bar.style.width = '0'; 
+            
+            // Gunakan setTimeout untuk memicu transisi CSS setelah browser merender
+            setTimeout(() => {
+                // Terapkan width asli yang ada di HTML (misal '80%')
+                bar.style.width = currentWidth; 
+            }, 100); 
+        });
+    };
+
+    // Fungsi untuk animasi fade-in saat menggulir
     const animateSections = () => {
         const sections = document.querySelectorAll('.animate');
         const windowHeight = window.innerHeight;
@@ -6,29 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
             
-            // Animasi dimulai saat 80% dari bagian terlihat (0.8)
             if (sectionTop < windowHeight * 0.8) {
                 section.classList.add('animated');
                 // Panggil fungsi animasi bar saat bagian skills terlihat
                 if (section.id === 'about') {
+                    // Hanya panggil sekali, pastikan bar-fill reset dulu
                     animateSkillBars();
                 }
             }
-        });
-    };
-
-    // Fungsi untuk menganimasikan progress bar
-    const animateSkillBars = () => {
-        const skillBars = document.querySelectorAll('.bar-fill');
-        skillBars.forEach(bar => {
-            // Ambil lebar yang sudah ditentukan di HTML
-            const width = bar.style.width; 
-            // Atur ulang width menjadi 0, lalu atur ke nilai aslinya setelah sedikit delay
-            bar.style.width = '0';
-            // Gunakan setTimeout untuk memicu transisi CSS setelah browser merender
-            setTimeout(() => {
-                bar.style.width = width;
-            }, 100); 
         });
     };
 
@@ -36,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', animateSections);
     window.addEventListener('scroll', animateSections);
     
-    // Panggil animateSections secara manual saat DOMContentLoaded selesai untuk mengecek elemen yang sudah terlihat
+    // Panggil animateSections secara manual saat DOMContentLoaded selesai
     animateSections(); 
 });
-
