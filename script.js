@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Fungsi untuk animasi fade-in saat menggulir
     const animateSections = () => {
         const sections = document.querySelectorAll('.animate');
         const windowHeight = window.innerHeight;
@@ -40,3 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Panggil animateSections secara manual saat DOMContentLoaded selesai untuk mengecek elemen yang sudah terlihat
     animateSections(); 
 });
+
