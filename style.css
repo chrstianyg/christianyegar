@@ -88,7 +88,6 @@ nav a:hover {
 
 /* --- Bagian Hero --- */
 .hero-section {
-    /* Padding diperbesar untuk memberi ruang bagi sticky header */
     padding: 150px 0 100px; 
 }
 
@@ -281,9 +280,11 @@ nav a:hover {
 }
 
 .skill-header {
-    display: flex;
+    /* PENTING: Untuk menjamin nama dan persentase sejajar */
+    display: inline-flex; 
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 5px;
 }
 
@@ -296,13 +297,14 @@ nav a:hover {
 .skill-header span {
     font-weight: 600;
     color: var(--accent);
+    flex-shrink: 0; /* Mencegah persentase terpotong */
 }
 
 .skill-icon {
     width: 28px;
     height: 28px;
     object-fit: contain;
-    margin-right: 15px;
+    margin-right: 10px; /* Jarak yang lebih kecil */
     color: white;
 }
 
